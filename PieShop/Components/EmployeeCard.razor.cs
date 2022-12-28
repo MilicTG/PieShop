@@ -1,6 +1,9 @@
-﻿namespace PieShop.Components
+﻿using BethanysPieShopHRM.Shared.Domain;
+
+namespace PieShop.Components
 {
-    public class EmployeeCard
+    public partial class EmployeeCard
     {
+        public Employee Employee { get; set; } = default;
     }
 }
