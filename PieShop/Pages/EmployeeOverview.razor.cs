@@ -7,9 +7,16 @@ namespace PieShop.Pages
     {
         public List<Employee>? Employess { get; set; } = default;
 
+        private Employee? _selectedEmployee;
+
         protected override void OnInitialized()
         {
             Employess = MockDataService.Employees;
+        }
+
+        public void ShowQuickViewPopup(Employee selectedEmployee)
+        {
+            _selectedEmployee= selectedEmployee;
         }
     }
 }
